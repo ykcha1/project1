@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>modelon.impact.client.operations.workspace package &mdash; Modelon-impact-client v4.10.4 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/rtd_sphinx_search.min.css" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/js/rtd_search_config.js"></script>
+        <script src="_static/js/rtd_sphinx_search.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="modelon.impact.client.sal package" href="modelon.impact.client.sal.html" />
+    <link rel="prev" title="modelon.impact.client.operations package" href="modelon.impact.client.operations.html" /> 
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="modelon-impact-client" /><meta name="readthedocs-version-slug" content="stable" /><meta name="readthedocs-resolver-filename" content="/modelon.impact.client.operations.workspace.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #fb8c00" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Modelon-impact-client
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install Modelon Impact Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authentication_with_modelon_impact.html">Authentication with Modelon Impact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="working_with_workspaces.html">Working with workspaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choosing_analysis_type.html">Choosing analysis type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choosing_a_model.html">Choosing a model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_run_experiment.html">Setup and run an experiment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting_experiment_results.html">Plotting experiment results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multi_execution_experiments.html">Multi-execution experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reexecuting_updating_experiments.html">Re-executing and updating experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fmu_based_workflow.html">FMU based workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logging_output_for_client.html">Logging output for client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="removing_fmus_experiments.html">Removing FMUs and experiments</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sobol_space_coverage.html">Sobol space coverage</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">modelon</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="modelon.html">modelon package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="modelon.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="modelon.impact.html">modelon.impact package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.html#module-modelon">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help &amp; Refernce</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #fb8c00" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Modelon-impact-client</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">modelon</a></li>
+          <li class="breadcrumb-item"><a href="modelon.html">modelon package</a></li>
+          <li class="breadcrumb-item"><a href="modelon.impact.html">modelon.impact package</a></li>
+          <li class="breadcrumb-item"><a href="modelon.impact.client.html">modelon.impact.client package</a></li>
+          <li class="breadcrumb-item"><a href="modelon.impact.client.operations.html">modelon.impact.client.operations package</a></li>
+      <li class="breadcrumb-item active">modelon.impact.client.operations.workspace package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modelon.impact.client.operations.workspace.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="modelon-impact-client-operations-workspace-package">
+<h1>modelon.impact.client.operations.workspace package<a class="headerlink" href="#modelon-impact-client-operations-workspace-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-modelon.impact.client.operations.workspace.conversion">
+<span id="modelon-impact-client-operations-workspace-conversion-module"></span><h2>modelon.impact.client.operations.workspace.conversion module<a class="headerlink" href="#module-modelon.impact.client.operations.workspace.conversion" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.conversion.WorkspaceConversionOperation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WorkspaceConversionOperation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create_entity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.operations.workspace.conversion.WorkspaceConversionOperation" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.AsyncOperation" title="modelon.impact.client.operations.base.AsyncOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">AsyncOperation</span></code></a>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">Entity</span></code>]</p>
+<p>An conversion operation class for the Workspace class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.conversion.WorkspaceConversionOperation.data">
+<span class="sig-name descname"><span class="pre">data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.operations.workspace.conversion.WorkspaceConversionOperation.data" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a Workspace class instance of the converted workspace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">Entity</span></code>)</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Workspace class instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.conversion.WorkspaceConversionOperation.id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#modelon.impact.client.operations.workspace.conversion.WorkspaceConversionOperation.id" title="Permalink to this definition"></a></dt>
+<dd><p>Workspace conversion id.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.conversion.WorkspaceConversionOperation.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#modelon.impact.client.operations.workspace.conversion.WorkspaceConversionOperation.name" title="Permalink to this definition"></a></dt>
+<dd><p>Return the name of operation.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.conversion.WorkspaceConversionOperation.status">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.AsyncOperationStatus" title="modelon.impact.client.operations.base.AsyncOperationStatus"><span class="pre">AsyncOperationStatus</span></a></em><a class="headerlink" href="#modelon.impact.client.operations.workspace.conversion.WorkspaceConversionOperation.status" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the conversion status as an enumeration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The AsyncOperationStatus enum. The status can have the enum values
+AsyncOperationStatus.READY, AsyncOperationStatus.RUNNING or
+AsyncOperationStatus.ERROR</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">client</span><span class="o">.</span><span class="n">convert_workspace</span><span class="p">(</span><span class="n">workspace_id</span><span class="p">)</span><span class="o">.</span><span class="n">status</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.operations.workspace.exports">
+<span id="modelon-impact-client-operations-workspace-exports-module"></span><h2>modelon.impact.client.operations.workspace.exports module<a class="headerlink" href="#module-modelon.impact.client.operations.workspace.exports" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.exports.Export">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Export</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">export_service</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">download_uri</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.operations.workspace.exports.Export" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.exports.Export.download_as">
+<span class="sig-name descname"><span class="pre">download_as</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_download</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.operations.workspace.exports.Export.download_as" title="Permalink to this definition"></a></dt>
+<dd><p>Writes the binary archive to a file. Returns the path to downloaded archive.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path_to_download</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The path to store the downloaded workspace.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>local path to the downloaded archive.</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">export</span><span class="p">()</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span><span class="o">.</span><span class="n">download_as</span><span class="p">(</span><span class="s1">&#39;/home/workspace.zip&#39;</span><span class="p">)</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">export</span><span class="p">()</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span><span class="o">.</span><span class="n">download_as</span><span class="p">(</span><span class="s1">&#39;workspace.zip&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.exports.Export.from_operation">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_operation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">operation</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.operations.workspace.exports.Export.from_operation" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#modelon.impact.client.operations.workspace.exports.Export" title="modelon.impact.client.operations.workspace.exports.Export"><code class="xref py py-class docutils literal notranslate"><span class="pre">Export</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.exports.Export.id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#modelon.impact.client.operations.workspace.exports.Export.id" title="Permalink to this definition"></a></dt>
+<dd><p>ID of the export.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.exports.WorkspaceExportOperation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WorkspaceExportOperation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create_entity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.operations.workspace.exports.WorkspaceExportOperation" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.AsyncOperation" title="modelon.impact.client.operations.base.AsyncOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">AsyncOperation</span></code></a>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">Entity</span></code>]</p>
+<p>An export operation class for the Workspace class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.exports.WorkspaceExportOperation.data">
+<span class="sig-name descname"><span class="pre">data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.operations.workspace.exports.WorkspaceExportOperation.data" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a Export class instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">Entity</span></code>)</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An Export class instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.exports.WorkspaceExportOperation.id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#modelon.impact.client.operations.workspace.exports.WorkspaceExportOperation.id" title="Permalink to this definition"></a></dt>
+<dd><p>Workspace export id.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.exports.WorkspaceExportOperation.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#modelon.impact.client.operations.workspace.exports.WorkspaceExportOperation.name" title="Permalink to this definition"></a></dt>
+<dd><p>Return the name of operation.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.exports.WorkspaceExportOperation.status">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.AsyncOperationStatus" title="modelon.impact.client.operations.base.AsyncOperationStatus"><span class="pre">AsyncOperationStatus</span></a></em><a class="headerlink" href="#modelon.impact.client.operations.workspace.exports.WorkspaceExportOperation.status" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the upload status as an enumeration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The AsyncOperationStatus enum. The status can have the enum values
+AsyncOperationStatus.READY, AsyncOperationStatus.RUNNING or
+AsyncOperationStatus.ERROR</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">workspace</span><span class="o">.</span><span class="n">download</span><span class="p">()</span><span class="o">.</span><span class="n">status</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.operations.workspace.imports">
+<span id="modelon-impact-client-operations-workspace-imports-module"></span><h2>modelon.impact.client.operations.workspace.imports module<a class="headerlink" href="#module-modelon.impact.client.operations.workspace.imports" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.imports.WorkspaceImportOperation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WorkspaceImportOperation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create_entity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.operations.workspace.imports.WorkspaceImportOperation" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.AsyncOperation" title="modelon.impact.client.operations.base.AsyncOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">AsyncOperation</span></code></a>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">Entity</span></code>]</p>
+<p>An import operation class for the Workspace class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.imports.WorkspaceImportOperation.data">
+<span class="sig-name descname"><span class="pre">data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.operations.workspace.imports.WorkspaceImportOperation.data" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a new Workspace class instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">Entity</span></code>)</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Workspace class instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.imports.WorkspaceImportOperation.id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#modelon.impact.client.operations.workspace.imports.WorkspaceImportOperation.id" title="Permalink to this definition"></a></dt>
+<dd><p>Workspace import id.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.imports.WorkspaceImportOperation.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#modelon.impact.client.operations.workspace.imports.WorkspaceImportOperation.name" title="Permalink to this definition"></a></dt>
+<dd><p>Return the name of operation.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.operations.workspace.imports.WorkspaceImportOperation.status">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.AsyncOperationStatus" title="modelon.impact.client.operations.base.AsyncOperationStatus"><span class="pre">AsyncOperationStatus</span></a></em><a class="headerlink" href="#modelon.impact.client.operations.workspace.imports.WorkspaceImportOperation.status" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the upload status as an enumeration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The AsyncOperationStatus enum. The status can have the enum values
+AsyncOperationStatus.READY, AsyncOperationStatus.RUNNING or
+AsyncOperationStatus.ERROR</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">client</span><span class="o">.</span><span class="n">import_workspace_from_shared_definition</span><span class="p">(</span><span class="n">definition</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">status</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.operations.workspace">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-modelon.impact.client.operations.workspace" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modelon.impact.client.operations.html" class="btn btn-neutral float-left" title="modelon.impact.client.operations package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="modelon.impact.client.sal.html" class="btn btn-neutral float-right" title="modelon.impact.client.sal package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2024, Modelon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

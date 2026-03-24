@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Re-executing and updating experiments &mdash; Modelon-impact-client v4.10.4 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/rtd_sphinx_search.min.css" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/js/rtd_search_config.js"></script>
+        <script src="_static/js/rtd_sphinx_search.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="FMU based workflow" href="fmu_based_workflow.html" />
+    <link rel="prev" title="Multi-execution experiments" href="multi_execution_experiments.html" /> 
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="modelon-impact-client" /><meta name="readthedocs-version-slug" content="stable" /><meta name="readthedocs-resolver-filename" content="/reexecuting_updating_experiments.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #fb8c00" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Modelon-impact-client
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install Modelon Impact Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authentication_with_modelon_impact.html">Authentication with Modelon Impact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="working_with_workspaces.html">Working with workspaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choosing_analysis_type.html">Choosing analysis type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choosing_a_model.html">Choosing a model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_run_experiment.html">Setup and run an experiment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting_experiment_results.html">Plotting experiment results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multi_execution_experiments.html">Multi-execution experiments</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Re-executing and updating experiments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#filtered-case-execution">Filtered case execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-cases">Updating cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#initializing-from-results">Initializing from results</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#initialize-from-case">Initialize from case</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#via-case-entity">1. Via case entity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#via-experiment-extensions">2. Via experiment extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#initialize-from-external-result">Initialize from external result</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fmu_based_workflow.html">FMU based workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logging_output_for_client.html">Logging output for client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="removing_fmus_experiments.html">Removing FMUs and experiments</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sobol_space_coverage.html">Sobol space coverage</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">modelon</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help &amp; Refernce</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #fb8c00" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Modelon-impact-client</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Re-executing and updating experiments</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/reexecuting_updating_experiments.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="re-executing-and-updating-experiments">
+<h1>Re-executing and updating experiments<a class="headerlink" href="#re-executing-and-updating-experiments" title="Permalink to this heading"></a></h1>
+<p><em>This tutorial covers updating and re-executing individual cases in an experiment.</em></p>
+<section id="filtered-case-execution">
+<h2>Filtered case execution<a class="headerlink" href="#filtered-case-execution" title="Permalink to this heading"></a></h2>
+<p>It is possible to update and run a subset of cases in a batch simulation. Call the execute method on the
+experiment object with the <code class="docutils literal notranslate"><span class="pre">with_cases</span></code> argument set to a list of the cases that should be executed.
+Observe that if the experiment has not been executed yet it will not have any cases that we can access.
+To work around this we can first execute the experiment and specify that no cases should be executed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">experiment</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">create_experiment</span><span class="p">(</span><span class="n">experiment_definition</span><span class="p">)</span>
+<span class="n">experiment_expand</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">with_cases</span><span class="o">=</span><span class="p">[])</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This generate all the cases for a given experiment definition and compiles all FMUs needed for running the cases.
+But, no cases are executed when the <code class="docutils literal notranslate"><span class="pre">execute</span></code> method is called with an empty list argument.</p>
+<p>Now, to execute only a subset of cases (say “case_2” and “case_3”) in a batch simulation with 20 cases, we can
+just pass the case objects as a list to the <code class="docutils literal notranslate"><span class="pre">with_cases</span></code> argument:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">case_2</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">get_case</span><span class="p">(</span><span class="s1">&#39;case_2&#39;</span><span class="p">)</span>
+<span class="n">case_3</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">get_case</span><span class="p">(</span><span class="s1">&#39;case_3&#39;</span><span class="p">)</span>
+
+<span class="n">experiment</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">with_cases</span><span class="o">=</span><span class="p">[</span><span class="n">case_2</span><span class="p">,</span> <span class="n">case_3</span><span class="p">])</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="updating-cases">
+<h2>Updating cases<a class="headerlink" href="#updating-cases" title="Permalink to this heading"></a></h2>
+<p>The case input for a specific case in a batch simulation can be updated and the case can be re-executed.
+The following input values could be updated:</p>
+<ol class="arabic simple">
+<li><p>Custom function parameters - E.g. - ‘start_time’, ‘final_time’ for a dynamic simulation.</p></li>
+<li><p>Simulation and solver options - E.g. - ‘ncp’, ‘atol’ etc for a dynamic simulation.</p></li>
+<li><p>Non-structural parameters - E.g. - ‘PI.k’ for the Modelica.Blocks.Examples.PID_Controller.</p></li>
+</ol>
+<p>The code snippet below shows examples of values that can be updated in a case:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">case_2</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">get_case</span><span class="p">(</span><span class="s1">&#39;case_2&#39;</span><span class="p">)</span>
+
+<span class="n">case_2</span><span class="o">.</span><span class="n">input</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;start_time&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;final_time&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">}</span>
+<span class="n">case_2</span><span class="o">.</span><span class="n">input</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">simulation_options</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;ncp&#39;</span><span class="p">:</span> <span class="mi">600</span><span class="p">}</span>
+<span class="n">case_2</span><span class="o">.</span><span class="n">input</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">solver_options</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;atol&#39;</span><span class="p">:</span> <span class="mf">1e-8</span><span class="p">}</span>
+<span class="n">case_2</span><span class="o">.</span><span class="n">input</span><span class="o">.</span><span class="n">parametrization</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;PI.k&#39;</span><span class="p">:</span> <span class="mi">120</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>It is also possible to add custom labels to cases to either uniquely identify them or group them:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">case_2</span><span class="o">.</span><span class="n">meta</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;PID_Controller_k_120&#39;</span>
+</pre></div>
+</div>
+<p>The cases with the set label can then be fetched by calling the <code class="docutils literal notranslate"><span class="pre">get_cases_with_label</span></code> method on
+the experiment object which would return a list of cases objects with the specified label:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PID_Controller_k_120_cases</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">get_cases_with_label</span><span class="p">(</span><span class="s1">&#39;PID_Controller_k_120&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Once the updates to the case input are made, we can re-execute the case by calling the <code class="docutils literal notranslate"><span class="pre">execute</span></code>
+method on the case object:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">case_2</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="initializing-from-results">
+<h2>Initializing from results<a class="headerlink" href="#initializing-from-results" title="Permalink to this heading"></a></h2>
+<p>It is possible to initialize a case or an experiment with a result from either another case, experiment
+or an external file. Observe that the custom function must support initializing from a result.
+Of the default custom functions only the ‘steady state’ custom function supports this.
+This is useful in cases where a converged steady-state result could be used to initialize a failed
+steady-state simulation. The different possibilities to initialize are covered in the sections below.</p>
+<p>Consider the following steady-state batch execution scenario for a model. The parametrization for the <cite>sweep</cite> parameter
+results in 3 cases, where let’s say a single case(case_2) in the batch simulation fails:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">experiment_definition</span> <span class="o">=</span> <span class="n">experiment_definition</span><span class="o">.</span><span class="n">with_modifiers</span><span class="p">({</span><span class="s1">&#39;sweep&#39;</span><span class="p">:</span> <span class="n">Range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">3</span><span class="p">)})</span>
+<span class="n">experiment</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">create_experiment</span><span class="p">(</span><span class="n">experiment_definition</span><span class="p">)</span>
+<span class="n">experiment</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span> <span class="c1"># Case 2 fails</span>
+</pre></div>
+</div>
+<p>We could try to resolve this by initializing the failed case with an appropriate case or result as covered in the sections below.</p>
+<section id="initialize-from-case">
+<h3>Initialize from case<a class="headerlink" href="#initialize-from-case" title="Permalink to this heading"></a></h3>
+<section id="via-case-entity">
+<h4>1. Via case entity<a class="headerlink" href="#via-case-entity" title="Permalink to this heading"></a></h4>
+<p>The following code snippet initializes a case from another case of a single or batch simulation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fetching the successful case</span>
+<span class="n">case_1</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">get_case</span><span class="p">(</span><span class="s1">&#39;case_1&#39;</span><span class="p">)</span>
+
+<span class="c1"># Fetching the failed case</span>
+<span class="n">case_2</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">get_case</span><span class="p">(</span><span class="s1">&#39;case_2&#39;</span><span class="p">)</span>
+
+<span class="c1"># Initializing from successful case</span>
+<span class="n">case_2</span><span class="o">.</span><span class="n">initialize_from_case</span> <span class="o">=</span> <span class="n">case_1</span>
+
+<span class="c1"># Re-executing the case after initializing</span>
+<span class="n">case_init_successful</span> <span class="o">=</span> <span class="n">case_2</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="via-experiment-extensions">
+<h4>2. Via experiment extensions<a class="headerlink" href="#via-experiment-extensions" title="Permalink to this heading"></a></h4>
+<p>It is also possible to initialize from a case for an experiment extension. The following
+code snippet shows a simple example of this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">experiment_extension</span> <span class="o">=</span> <span class="n">SimpleExperimentExtension</span><span class="p">(</span>
+   <span class="n">parameter_modifiers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;final_time&#39;</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">},</span>
+   <span class="n">solver_options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;atol&#39;</span><span class="p">:</span> <span class="mf">1e-9</span><span class="p">},</span>
+   <span class="n">simulation_options</span><span class="o">=</span><span class="n">dynamic</span><span class="o">.</span><span class="n">get_simulation_options</span><span class="p">()</span><span class="o">.</span><span class="n">with_values</span><span class="p">(</span><span class="n">ncp</span><span class="o">=</span><span class="mi">1500</span><span class="p">),</span>
+<span class="p">)</span><span class="o">.</span><span class="n">initialize_from</span><span class="p">(</span><span class="n">case_1</span><span class="p">)</span>
+
+<span class="n">experiment</span> <span class="o">=</span> <span class="n">experiment_definition</span><span class="o">.</span><span class="n">with_extensions</span><span class="p">(</span>
+   <span class="p">[</span><span class="n">experiment_extension</span><span class="p">]</span>
+<span class="p">)</span>
+<span class="n">experiment</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> For this example, the case(‘case_1’) used to initialize the experiment_extension
+comes from another experiment unlike the <a class="reference internal" href="#via-case-entity"><span class="std std-ref">case entity</span></a> approach
+where the case used to initialize was from the same experiment.</p>
+</section>
+</section>
+<section id="initialize-from-external-result">
+<h3>Initialize from external result<a class="headerlink" href="#initialize-from-external-result" title="Permalink to this heading"></a></h3>
+<p>It is possible to upload external result files to initialize a case from. This can now only be used
+for initializing from in a case and be used as an alternative to <a class="reference internal" href="#initialize-from-case"><span class="std std-ref">initializing from another case</span></a>.
+Currently, ‘.mat’ files are supported for result import.</p>
+<p>Here is a code snippet, where an external result is imported and used to initialize a case:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">upload_result</span><span class="p">(</span><span class="n">path_to_result</span><span class="o">=</span><span class="s2">&quot;&lt;path_to_result&gt;/result.mat&quot;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span>
+         <span class="s2">&quot;result_to_init&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span> <span class="s2">&quot;Converged result file&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+
+<span class="c1"># Initializing from external result</span>
+<span class="n">case_2</span><span class="o">.</span><span class="n">initialize_from_external_result</span> <span class="o">=</span> <span class="n">result</span>
+
+<span class="c1"># Re-executing the case after initializing</span>
+<span class="n">case_init_successful</span> <span class="o">=</span> <span class="n">case_2</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="multi_execution_experiments.html" class="btn btn-neutral float-left" title="Multi-execution experiments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fmu_based_workflow.html" class="btn btn-neutral float-right" title="FMU based workflow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2024, Modelon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>modelon.impact.client.sal package &mdash; Modelon-impact-client v4.10.4 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/rtd_sphinx_search.min.css" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/js/rtd_search_config.js"></script>
+        <script src="_static/js/rtd_sphinx_search.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Community" href="help.html" />
+    <link rel="prev" title="modelon.impact.client.operations.workspace package" href="modelon.impact.client.operations.workspace.html" /> 
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="modelon-impact-client" /><meta name="readthedocs-version-slug" content="stable" /><meta name="readthedocs-resolver-filename" content="/modelon.impact.client.sal.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #fb8c00" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Modelon-impact-client
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install Modelon Impact Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authentication_with_modelon_impact.html">Authentication with Modelon Impact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="working_with_workspaces.html">Working with workspaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choosing_analysis_type.html">Choosing analysis type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choosing_a_model.html">Choosing a model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_run_experiment.html">Setup and run an experiment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting_experiment_results.html">Plotting experiment results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multi_execution_experiments.html">Multi-execution experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reexecuting_updating_experiments.html">Re-executing and updating experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fmu_based_workflow.html">FMU based workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logging_output_for_client.html">Logging output for client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="removing_fmus_experiments.html">Removing FMUs and experiments</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sobol_space_coverage.html">Sobol space coverage</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">modelon</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="modelon.html">modelon package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="modelon.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="modelon.impact.html">modelon.impact package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.html#module-modelon">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help &amp; Refernce</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #fb8c00" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Modelon-impact-client</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">modelon</a></li>
+          <li class="breadcrumb-item"><a href="modelon.html">modelon package</a></li>
+          <li class="breadcrumb-item"><a href="modelon.impact.html">modelon.impact package</a></li>
+          <li class="breadcrumb-item"><a href="modelon.impact.client.html">modelon.impact.client package</a></li>
+      <li class="breadcrumb-item active">modelon.impact.client.sal package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modelon.impact.client.sal.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="modelon-impact-client-sal-package">
+<h1>modelon.impact.client.sal package<a class="headerlink" href="#modelon-impact-client-sal-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-modelon.impact.client.sal.context">
+<span id="modelon-impact-client-sal-context-module"></span><h2>modelon.impact.client.sal.context module<a class="headerlink" href="#module-modelon.impact.client.sal.context" title="Permalink to this heading"></a></h2>
+<p>Context class.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.context.Context">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Context</span></span><a class="headerlink" href="#modelon.impact.client.sal.context.Context" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.custom_function">
+<span id="modelon-impact-client-sal-custom-function-module"></span><h2>modelon.impact.client.sal.custom_function module<a class="headerlink" href="#module-modelon.impact.client.sal.custom_function" title="Permalink to this heading"></a></h2>
+<p>Custom function service module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.custom_function.CustomFunctionService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CustomFunctionService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.custom_function.CustomFunctionService" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.custom_function.CustomFunctionService.custom_function_default_options_get">
+<span class="sig-name descname"><span class="pre">custom_function_default_options_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.custom_function.CustomFunctionService.custom_function_default_options_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.custom_function.CustomFunctionService.custom_function_get">
+<span class="sig-name descname"><span class="pre">custom_function_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.custom_function.CustomFunctionService.custom_function_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.custom_function.CustomFunctionService.custom_function_options_get">
+<span class="sig-name descname"><span class="pre">custom_function_options_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.custom_function.CustomFunctionService.custom_function_options_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.custom_function.CustomFunctionService.custom_functions_get">
+<span class="sig-name descname"><span class="pre">custom_functions_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.custom_function.CustomFunctionService.custom_functions_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.exceptions">
+<span id="modelon-impact-client-sal-exceptions-module"></span><h2>modelon.impact.client.sal.exceptions module<a class="headerlink" href="#module-modelon.impact.client.sal.exceptions" title="Permalink to this heading"></a></h2>
+<p>Service access layer exceptions.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exceptions.CommunicationError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CommunicationError</span></span><a class="headerlink" href="#modelon.impact.client.sal.exceptions.CommunicationError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.exceptions.ServiceAccessError" title="modelon.impact.client.sal.exceptions.ServiceAccessError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccessError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exceptions.ErrorBodyIsNotJSONError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ErrorBodyIsNotJSONError</span></span><a class="headerlink" href="#modelon.impact.client.sal.exceptions.ErrorBodyIsNotJSONError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.exceptions.ServiceAccessError" title="modelon.impact.client.sal.exceptions.ServiceAccessError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccessError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exceptions.ErrorJSONInvalidFormatError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ErrorJSONInvalidFormatError</span></span><a class="headerlink" href="#modelon.impact.client.sal.exceptions.ErrorJSONInvalidFormatError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.exceptions.ServiceAccessError" title="modelon.impact.client.sal.exceptions.ServiceAccessError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccessError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exceptions.HTTPError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HTTPError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status_code</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.exceptions.HTTPError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.exceptions.ServiceAccessError" title="modelon.impact.client.sal.exceptions.ServiceAccessError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccessError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exceptions.InvalidContentTypeError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InvalidContentTypeError</span></span><a class="headerlink" href="#modelon.impact.client.sal.exceptions.InvalidContentTypeError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.exceptions.ServiceAccessError" title="modelon.impact.client.sal.exceptions.ServiceAccessError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccessError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exceptions.NoResponseFetchVersionError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NoResponseFetchVersionError</span></span><a class="headerlink" href="#modelon.impact.client.sal.exceptions.NoResponseFetchVersionError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.exceptions.ServiceAccessError" title="modelon.impact.client.sal.exceptions.ServiceAccessError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccessError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exceptions.SSLError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SSLError</span></span><a class="headerlink" href="#modelon.impact.client.sal.exceptions.SSLError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.exceptions.ServiceAccessError" title="modelon.impact.client.sal.exceptions.ServiceAccessError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccessError</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exceptions.ServiceAccessError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ServiceAccessError</span></span><a class="headerlink" href="#modelon.impact.client.sal.exceptions.ServiceAccessError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exceptions.UnauthorizedError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UnauthorizedError</span></span><a class="headerlink" href="#modelon.impact.client.sal.exceptions.UnauthorizedError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.exceptions.ServiceAccessError" title="modelon.impact.client.sal.exceptions.ServiceAccessError"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServiceAccessError</span></code></a></p>
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.experiment">
+<span id="modelon-impact-client-sal-experiment-module"></span><h2>modelon.impact.client.sal.experiment module<a class="headerlink" href="#module-modelon.impact.client.sal.experiment" title="Permalink to this heading"></a></h2>
+<p>Experiment service module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ExperimentService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.case_artifact_get">
+<span class="sig-name descname"><span class="pre">case_artifact_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">artifact_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.case_artifact_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.case_artifacts_meta_get">
+<span class="sig-name descname"><span class="pre">case_artifacts_meta_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.case_artifacts_meta_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.case_get">
+<span class="sig-name descname"><span class="pre">case_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.case_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.case_get_log">
+<span class="sig-name descname"><span class="pre">case_get_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.case_get_log" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.case_put">
+<span class="sig-name descname"><span class="pre">case_put</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.case_put" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.case_result_get">
+<span class="sig-name descname"><span class="pre">case_result_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ResultFormat.MAT</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.case_result_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.case_result_upload">
+<span class="sig-name descname"><span class="pre">case_result_upload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_result</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.case_result_upload" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.case_result_variables_get">
+<span class="sig-name descname"><span class="pre">case_result_variables_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.case_result_variables_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.case_trajectories_get">
+<span class="sig-name descname"><span class="pre">case_trajectories_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_point_only</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.case_trajectories_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.cases_get">
+<span class="sig-name descname"><span class="pre">cases_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.cases_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.custom_artifact_upload">
+<span class="sig-name descname"><span class="pre">custom_artifact_upload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_artifact</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">artifact_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.custom_artifact_upload" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.execute_cancel">
+<span class="sig-name descname"><span class="pre">execute_cancel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.execute_cancel" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.execute_status">
+<span class="sig-name descname"><span class="pre">execute_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.execute_status" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.experiment_delete">
+<span class="sig-name descname"><span class="pre">experiment_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.experiment_delete" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.experiment_execute">
+<span class="sig-name descname"><span class="pre">experiment_execute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">case_ids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.experiment_execute" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.experiment_result_variables_get">
+<span class="sig-name descname"><span class="pre">experiment_result_variables_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.experiment_result_variables_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.experiment_set_label">
+<span class="sig-name descname"><span class="pre">experiment_set_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.experiment_set_label" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ExperimentService.trajectories_get">
+<span class="sig-name descname"><span class="pre">trajectories_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_point_only</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ExperimentService.trajectories_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ResultFormat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResultFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.experiment.ResultFormat" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Class representing an enumeration for the possible formats available for
+downloading results.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ResultFormat.CSV">
+<span class="sig-name descname"><span class="pre">CSV</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'csv'</span></em><a class="headerlink" href="#modelon.impact.client.sal.experiment.ResultFormat.CSV" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.experiment.ResultFormat.MAT">
+<span class="sig-name descname"><span class="pre">MAT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'mat'</span></em><a class="headerlink" href="#modelon.impact.client.sal.experiment.ResultFormat.MAT" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.exports">
+<span id="modelon-impact-client-sal-exports-module"></span><h2>modelon.impact.client.sal.exports module<a class="headerlink" href="#module-modelon.impact.client.sal.exports" title="Permalink to this heading"></a></h2>
+<p>Export service module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exports.ExportService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ExportService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.exports.ExportService" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exports.ExportService.export_download">
+<span class="sig-name descname"><span class="pre">export_download</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.exports.ExportService.export_download" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.exports.ExportService.get_export_status">
+<span class="sig-name descname"><span class="pre">get_export_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.exports.ExportService.get_export_status" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.external_result">
+<span id="modelon-impact-client-sal-external-result-module"></span><h2>modelon.impact.client.sal.external_result module<a class="headerlink" href="#module-modelon.impact.client.sal.external_result" title="Permalink to this heading"></a></h2>
+<p>External result service module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.external_result.ExternalResultService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ExternalResultService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.external_result.ExternalResultService" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.external_result.ExternalResultService.delete_uploaded_result">
+<span class="sig-name descname"><span class="pre">delete_uploaded_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.external_result.ExternalResultService.delete_uploaded_result" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.external_result.ExternalResultService.get_uploaded_result">
+<span class="sig-name descname"><span class="pre">get_uploaded_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.external_result.ExternalResultService.get_uploaded_result" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.external_result.ExternalResultService.result_upload">
+<span class="sig-name descname"><span class="pre">result_upload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_result</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.external_result.ExternalResultService.result_upload" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.http">
+<span id="modelon-impact-client-sal-http-module"></span><h2>modelon.impact.client.sal.http module<a class="headerlink" href="#module-modelon.impact.client.sal.http" title="Permalink to this heading"></a></h2>
+<p>HTTP client class.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HTTPClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.delete_json">
+<span class="sig-name descname"><span class="pre">delete_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.delete_json" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.get_csv">
+<span class="sig-name descname"><span class="pre">get_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.get_csv" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#modelon.impact.client.sal.response.CSVResponse" title="modelon.impact.client.sal.response.CSVResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">CSVResponse</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.get_file_response">
+<span class="sig-name descname"><span class="pre">get_file_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.get_file_response" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#modelon.impact.client.sal.response.FileResponse" title="modelon.impact.client.sal.response.FileResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileResponse</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.get_json">
+<span class="sig-name descname"><span class="pre">get_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.get_json" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.get_json_response">
+<span class="sig-name descname"><span class="pre">get_json_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.get_json_response" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#modelon.impact.client.sal.response.JSONResponse" title="modelon.impact.client.sal.response.JSONResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">JSONResponse</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.get_mat">
+<span class="sig-name descname"><span class="pre">get_mat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.get_mat" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#modelon.impact.client.sal.response.MatStreamResponse" title="modelon.impact.client.sal.response.MatStreamResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">MatStreamResponse</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.get_octet_response">
+<span class="sig-name descname"><span class="pre">get_octet_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.get_octet_response" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#modelon.impact.client.sal.response.OctetStreamResponse" title="modelon.impact.client.sal.response.OctetStreamResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">OctetStreamResponse</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.get_text">
+<span class="sig-name descname"><span class="pre">get_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.get_text" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.get_xml">
+<span class="sig-name descname"><span class="pre">get_xml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.get_xml" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.get_zip">
+<span class="sig-name descname"><span class="pre">get_zip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.get_zip" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.patch_json_no_response_body">
+<span class="sig-name descname"><span class="pre">patch_json_no_response_body</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.patch_json_no_response_body" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.post_json">
+<span class="sig-name descname"><span class="pre">post_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.post_json" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.post_json_no_response_body">
+<span class="sig-name descname"><span class="pre">post_json_no_response_body</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.post_json_no_response_body" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.put_json">
+<span class="sig-name descname"><span class="pre">put_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.put_json" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.http.HTTPClient.put_json_no_response_body">
+<span class="sig-name descname"><span class="pre">put_json_no_response_body</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.http.HTTPClient.put_json_no_response_body" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.imports">
+<span id="modelon-impact-client-sal-imports-module"></span><h2>modelon.impact.client.sal.imports module<a class="headerlink" href="#module-modelon.impact.client.sal.imports" title="Permalink to this heading"></a></h2>
+<p>Import service module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.imports.ImportService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ImportService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.imports.ImportService" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.imports.ImportService.get_import_status">
+<span class="sig-name descname"><span class="pre">get_import_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.imports.ImportService.get_import_status" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.model_executable">
+<span id="modelon-impact-client-sal-model-executable-module"></span><h2>modelon.impact.client.sal.model_executable module<a class="headerlink" href="#module-modelon.impact.client.sal.model_executable" title="Permalink to this heading"></a></h2>
+<p>Model executable service module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.model_executable.ModelExecutableService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ModelExecutableService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.model_executable.ModelExecutableService" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.model_executable.ModelExecutableService.compile_cancel">
+<span class="sig-name descname"><span class="pre">compile_cancel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.model_executable.ModelExecutableService.compile_cancel" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.model_executable.ModelExecutableService.compile_log">
+<span class="sig-name descname"><span class="pre">compile_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.model_executable.ModelExecutableService.compile_log" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.model_executable.ModelExecutableService.compile_model">
+<span class="sig-name descname"><span class="pre">compile_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.model_executable.ModelExecutableService.compile_model" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.model_executable.ModelExecutableService.compile_status">
+<span class="sig-name descname"><span class="pre">compile_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.model_executable.ModelExecutableService.compile_status" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.model_executable.ModelExecutableService.fmu_delete">
+<span class="sig-name descname"><span class="pre">fmu_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.model_executable.ModelExecutableService.fmu_delete" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.model_executable.ModelExecutableService.fmu_setup">
+<span class="sig-name descname"><span class="pre">fmu_setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_cached</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.model_executable.ModelExecutableService.fmu_setup" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.model_executable.ModelExecutableService.model_description_get">
+<span class="sig-name descname"><span class="pre">model_description_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.model_executable.ModelExecutableService.model_description_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.model_executable.ModelExecutableService.settable_parameters_get">
+<span class="sig-name descname"><span class="pre">settable_parameters_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.model_executable.ModelExecutableService.settable_parameters_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.model_executable.ModelExecutableService.ss_fmu_metadata_get">
+<span class="sig-name descname"><span class="pre">ss_fmu_metadata_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter_state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.model_executable.ModelExecutableService.ss_fmu_metadata_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.project">
+<span id="modelon-impact-client-sal-project-module"></span><h2>modelon.impact.client.sal.project module<a class="headerlink" href="#module-modelon.impact.client.sal.project" title="Permalink to this heading"></a></h2>
+<p>Project service module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ProjectService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.fmu_import">
+<span class="sig-name descname"><span class="pre">fmu_import</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_patterns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_patterns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">top_level_inputs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.fmu_import" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.import_from_zip">
+<span class="sig-name descname"><span class="pre">import_from_zip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_project</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.import_from_zip" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.project_content_delete">
+<span class="sig-name descname"><span class="pre">project_content_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.project_content_delete" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.project_content_get">
+<span class="sig-name descname"><span class="pre">project_content_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.project_content_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.project_content_upload">
+<span class="sig-name descname"><span class="pre">project_content_upload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_result</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">project_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.project_content_upload" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.project_default_options_get">
+<span class="sig-name descname"><span class="pre">project_default_options_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.project_default_options_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.project_delete">
+<span class="sig-name descname"><span class="pre">project_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.project_delete" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.project_get">
+<span class="sig-name descname"><span class="pre">project_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vcs_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.project_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.project_options_get">
+<span class="sig-name descname"><span class="pre">project_options_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.project_options_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.project_put">
+<span class="sig-name descname"><span class="pre">project_put</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">project_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.project_put" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.project.ProjectService.projects_get">
+<span class="sig-name descname"><span class="pre">projects_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vcs_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">project_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storage_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.project.ProjectService.projects_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.request">
+<span id="modelon-impact-client-sal-request-module"></span><h2>modelon.impact.client.sal.request module<a class="headerlink" href="#module-modelon.impact.client.sal.request" title="Permalink to this heading"></a></h2>
+<p>Request class.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.request.Request">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.request.Request" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.request.Request.execute">
+<span class="sig-name descname"><span class="pre">execute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">check_return</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.request.Request.execute" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.request.RequestCSV">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequestCSV</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.request.RequestCSV" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.request.Request" title="modelon.impact.client.sal.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.request.RequestFileStream">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequestFileStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.request.RequestFileStream" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.request.Request" title="modelon.impact.client.sal.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.request.RequestJSON">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequestJSON</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.request.RequestJSON" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.request.Request" title="modelon.impact.client.sal.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.request.RequestMatStream">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequestMatStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.request.RequestMatStream" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.request.Request" title="modelon.impact.client.sal.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.request.RequestOctetStream">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequestOctetStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.request.RequestOctetStream" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.request.Request" title="modelon.impact.client.sal.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.request.RequestText">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequestText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.request.RequestText" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.request.Request" title="modelon.impact.client.sal.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.request.RequestXML">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequestXML</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.request.RequestXML" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.request.Request" title="modelon.impact.client.sal.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.request.RequestZip">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RequestZip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.request.RequestZip" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.request.Request" title="modelon.impact.client.sal.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a></p>
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.response">
+<span id="modelon-impact-client-sal-response-module"></span><h2>modelon.impact.client.sal.response module<a class="headerlink" href="#module-modelon.impact.client.sal.response" title="Permalink to this heading"></a></h2>
+<p>Response class.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.CSVResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CSVResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.response.CSVResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.response.FileResponse" title="modelon.impact.client.sal.response.FileResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileResponse</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.FileResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FileResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.response.FileResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.response.Response" title="modelon.impact.client.sal.response.Response"><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></a></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.FileResponse.file_name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">file_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#modelon.impact.client.sal.response.FileResponse.file_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.FileResponse.headers">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">headers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#modelon.impact.client.sal.response.FileResponse.headers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.FileResponse.stream">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">stream</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bytes</span></em><a class="headerlink" href="#modelon.impact.client.sal.response.FileResponse.stream" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.JSONResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JSONResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.response.JSONResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.response.Response" title="modelon.impact.client.sal.response.Response"><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></a></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.JSONResponse.data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#modelon.impact.client.sal.response.JSONResponse.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.JSONResponse.headers">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">headers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#modelon.impact.client.sal.response.JSONResponse.headers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.MatStreamResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MatStreamResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.response.MatStreamResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.response.FileResponse" title="modelon.impact.client.sal.response.FileResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileResponse</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.OctetStreamResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OctetStreamResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.response.OctetStreamResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.response.FileResponse" title="modelon.impact.client.sal.response.FileResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileResponse</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.Response">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.response.Response" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.Response.error">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#modelon.impact.client.sal.response.ResponseError" title="modelon.impact.client.sal.response.ResponseError"><span class="pre">ResponseError</span></a></em><a class="headerlink" href="#modelon.impact.client.sal.response.Response.error" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.Response.ok">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ok</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#modelon.impact.client.sal.response.Response.ok" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.Response.status_code">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status_code</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#modelon.impact.client.sal.response.Response.status_code" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.ResponseError">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResponseError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">code</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.response.ResponseError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.TextResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TextResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.response.TextResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.response.Response" title="modelon.impact.client.sal.response.Response"><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></a></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.TextResponse.data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#modelon.impact.client.sal.response.TextResponse.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.XMLResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">XMLResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.response.XMLResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.response.Response" title="modelon.impact.client.sal.response.Response"><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></a></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.XMLResponse.data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#modelon.impact.client.sal.response.XMLResponse.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.ZIPResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ZIPResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.response.ZIPResponse" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelon.impact.client.sal.response.Response" title="modelon.impact.client.sal.response.Response"><code class="xref py py-class docutils literal notranslate"><span class="pre">Response</span></code></a></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.response.ZIPResponse.data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bytes</span></em><a class="headerlink" href="#modelon.impact.client.sal.response.ZIPResponse.data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.service">
+<span id="modelon-impact-client-sal-service-module"></span><h2>modelon.impact.client.sal.service module<a class="headerlink" href="#module-modelon.impact.client.sal.service" title="Permalink to this heading"></a></h2>
+<p>Service class.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.service.Service">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Service</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.service.Service" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.service.Service.api_get_metadata">
+<span class="sig-name descname"><span class="pre">api_get_metadata</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.service.Service.api_get_metadata" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.service.Service.get_executions">
+<span class="sig-name descname"><span class="pre">get_executions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.service.Service.get_executions" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.service.is_jupyterhub_url">
+<span class="sig-name descname"><span class="pre">is_jupyterhub_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.service.is_jupyterhub_url" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.uri">
+<span id="modelon-impact-client-sal-uri-module"></span><h2>modelon.impact.client.sal.uri module<a class="headerlink" href="#module-modelon.impact.client.sal.uri" title="Permalink to this heading"></a></h2>
+<p>URI class.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.uri.URI">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">URI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.uri.URI" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.uri.URI.resolve">
+<span class="sig-name descname"><span class="pre">resolve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.uri.URI.resolve" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.users">
+<span id="modelon-impact-client-sal-users-module"></span><h2>modelon.impact.client.sal.users module<a class="headerlink" href="#module-modelon.impact.client.sal.users" title="Permalink to this heading"></a></h2>
+<p>Users service module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.users.UsersService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UsersService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.users.UsersService" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.users.UsersService.get_me">
+<span class="sig-name descname"><span class="pre">get_me</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.users.UsersService.get_me" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal.workspace">
+<span id="modelon-impact-client-sal-workspace-module"></span><h2>modelon.impact.client.sal.workspace module<a class="headerlink" href="#module-modelon.impact.client.sal.workspace" title="Permalink to this heading"></a></h2>
+<p>Workspace service module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">WorkspaceService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uri</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.cleanup_orphans">
+<span class="sig-name descname"><span class="pre">cleanup_orphans</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_list_orphans</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.cleanup_orphans" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.delete_published_workspace">
+<span class="sig-name descname"><span class="pre">delete_published_workspace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.delete_published_workspace" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.dependencies_get">
+<span class="sig-name descname"><span class="pre">dependencies_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vcs_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_disabled</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.dependencies_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.experiment_create">
+<span class="sig-name descname"><span class="pre">experiment_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">definition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.experiment_create" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.experiment_get">
+<span class="sig-name descname"><span class="pre">experiment_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.experiment_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.experiments_get">
+<span class="sig-name descname"><span class="pre">experiments_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_info</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.experiments_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.fmu_download">
+<span class="sig-name descname"><span class="pre">fmu_download</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.fmu_download" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.fmu_get">
+<span class="sig-name descname"><span class="pre">fmu_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmu_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.fmu_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.fmus_get">
+<span class="sig-name descname"><span class="pre">fmus_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.fmus_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.get_project_matchings">
+<span class="sig-name descname"><span class="pre">get_project_matchings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shared_definition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.get_project_matchings" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.get_published_workspace">
+<span class="sig-name descname"><span class="pre">get_published_workspace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.get_published_workspace" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.get_published_workspace_acl">
+<span class="sig-name descname"><span class="pre">get_published_workspace_acl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.get_published_workspace_acl" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.get_published_workspaces">
+<span class="sig-name descname"><span class="pre">get_published_workspaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">owner_username</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.get_published_workspaces" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.get_published_workspaces_by_kind">
+<span class="sig-name descname"><span class="pre">get_published_workspaces_by_kind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.get_published_workspaces_by_kind" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.get_workspace_conversion_status">
+<span class="sig-name descname"><span class="pre">get_workspace_conversion_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.get_workspace_conversion_status" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.grant_community_access">
+<span class="sig-name descname"><span class="pre">grant_community_access</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.grant_community_access" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.grant_group_access">
+<span class="sig-name descname"><span class="pre">grant_group_access</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.grant_group_access" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.grant_user_access">
+<span class="sig-name descname"><span class="pre">grant_user_access</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.grant_user_access" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.import_dependency_from_zip">
+<span class="sig-name descname"><span class="pre">import_dependency_from_zip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_project</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.import_dependency_from_zip" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.import_from_cloud">
+<span class="sig-name descname"><span class="pre">import_from_cloud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite_workspace_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.import_from_cloud" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.import_from_shared_definition">
+<span class="sig-name descname"><span class="pre">import_from_shared_definition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shared_definition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selected_matchings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.import_from_shared_definition" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.import_from_zip">
+<span class="sig-name descname"><span class="pre">import_from_zip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_workspace</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.import_from_zip" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.import_project_from_zip">
+<span class="sig-name descname"><span class="pre">import_project_from_zip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_project</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.import_project_from_zip" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.project_create">
+<span class="sig-name descname"><span class="pre">project_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.project_create" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.projects_get">
+<span class="sig-name descname"><span class="pre">projects_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vcs_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_disabled</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.projects_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.rename_published_workspace">
+<span class="sig-name descname"><span class="pre">rename_published_workspace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">workspace_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.rename_published_workspace" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.request_user_access">
+<span class="sig-name descname"><span class="pre">request_user_access</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.request_user_access" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.revoke_community_access">
+<span class="sig-name descname"><span class="pre">revoke_community_access</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.revoke_community_access" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.revoke_group_access">
+<span class="sig-name descname"><span class="pre">revoke_group_access</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.revoke_group_access" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.revoke_user_access">
+<span class="sig-name descname"><span class="pre">revoke_user_access</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.revoke_user_access" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.shared_definition_get">
+<span class="sig-name descname"><span class="pre">shared_definition_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.shared_definition_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.update_workspace">
+<span class="sig-name descname"><span class="pre">update_workspace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.update_workspace" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.workspace_conversion_setup">
+<span class="sig-name descname"><span class="pre">workspace_conversion_setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backup_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.workspace_conversion_setup" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.workspace_create">
+<span class="sig-name descname"><span class="pre">workspace_create</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.workspace_create" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.workspace_delete">
+<span class="sig-name descname"><span class="pre">workspace_delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.workspace_delete" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.workspace_export_setup">
+<span class="sig-name descname"><span class="pre">workspace_export_setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">publish</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.workspace_export_setup" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.workspace_get">
+<span class="sig-name descname"><span class="pre">workspace_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">workspace_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.workspace_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelon.impact.client.sal.workspace.WorkspaceService.workspaces_get">
+<span class="sig-name descname"><span class="pre">workspaces_get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">only_app_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sharing_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#modelon.impact.client.sal.workspace.WorkspaceService.workspaces_get" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-modelon.impact.client.sal">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-modelon.impact.client.sal" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modelon.impact.client.operations.workspace.html" class="btn btn-neutral float-left" title="modelon.impact.client.operations.workspace package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="help.html" class="btn btn-neutral float-right" title="Community" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2024, Modelon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>modelon.impact package &mdash; Modelon-impact-client v4.10.4 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/rtd_sphinx_search.min.css" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/js/rtd_search_config.js"></script>
+        <script src="_static/js/rtd_sphinx_search.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="modelon.impact.client package" href="modelon.impact.client.html" />
+    <link rel="prev" title="modelon package" href="modelon.html" /> 
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="modelon-impact-client" /><meta name="readthedocs-version-slug" content="stable" /><meta name="readthedocs-resolver-filename" content="/modelon.impact.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #fb8c00" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Modelon-impact-client
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install Modelon Impact Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authentication_with_modelon_impact.html">Authentication with Modelon Impact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="working_with_workspaces.html">Working with workspaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choosing_analysis_type.html">Choosing analysis type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choosing_a_model.html">Choosing a model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_run_experiment.html">Setup and run an experiment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting_experiment_results.html">Plotting experiment results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multi_execution_experiments.html">Multi-execution experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reexecuting_updating_experiments.html">Re-executing and updating experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fmu_based_workflow.html">FMU based workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logging_output_for_client.html">Logging output for client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="removing_fmus_experiments.html">Removing FMUs and experiments</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sobol_space_coverage.html">Sobol space coverage</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">modelon</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="modelon.html">modelon package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="modelon.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">modelon.impact package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.html#module-modelon">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help &amp; Refernce</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #fb8c00" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Modelon-impact-client</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">modelon</a></li>
+          <li class="breadcrumb-item"><a href="modelon.html">modelon package</a></li>
+      <li class="breadcrumb-item active">modelon.impact package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modelon.impact.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="modelon-impact-package">
+<h1>modelon.impact package<a class="headerlink" href="#modelon-impact-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modelon.impact.client.html">modelon.impact.client package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modelon.impact.client.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.entities.html">modelon.impact.client.entities package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.interfaces.html">modelon.impact.client.entities.interfaces package</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.asserts">modelon.impact.client.entities.asserts module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.asserts.assert_successful_operation"><code class="docutils literal notranslate"><span class="pre">assert_successful_operation()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.asserts.assert_variable_in_result"><code class="docutils literal notranslate"><span class="pre">assert_variable_in_result()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.case">modelon.impact.client.entities.case module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.case.Case"><code class="docutils literal notranslate"><span class="pre">Case</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.case.CaseAnalysis"><code class="docutils literal notranslate"><span class="pre">CaseAnalysis</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.case.CaseInput"><code class="docutils literal notranslate"><span class="pre">CaseInput</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.case.CaseMeta"><code class="docutils literal notranslate"><span class="pre">CaseMeta</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.case.CaseRunInfo"><code class="docutils literal notranslate"><span class="pre">CaseRunInfo</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.content">modelon.impact.client.entities.content module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.content.ContentType"><code class="docutils literal notranslate"><span class="pre">ContentType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.content.ProjectContent"><code class="docutils literal notranslate"><span class="pre">ProjectContent</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.custom_artifact">modelon.impact.client.entities.custom_artifact module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.custom_artifact.CustomArtifact"><code class="docutils literal notranslate"><span class="pre">CustomArtifact</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.custom_function">modelon.impact.client.entities.custom_function module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.custom_function.CustomFunction"><code class="docutils literal notranslate"><span class="pre">CustomFunction</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.custom_function.ParameterDict"><code class="docutils literal notranslate"><span class="pre">ParameterDict</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.experiment">modelon.impact.client.entities.experiment module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.experiment.Experiment"><code class="docutils literal notranslate"><span class="pre">Experiment</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.experiment.ExperimentMetaData"><code class="docutils literal notranslate"><span class="pre">ExperimentMetaData</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.experiment.ExperimentResultPoint"><code class="docutils literal notranslate"><span class="pre">ExperimentResultPoint</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.experiment.ExperimentRunInfo"><code class="docutils literal notranslate"><span class="pre">ExperimentRunInfo</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.experiment.ExperimentSizeInfo"><code class="docutils literal notranslate"><span class="pre">ExperimentSizeInfo</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.external_result">modelon.impact.client.entities.external_result module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.external_result.ExternalResult"><code class="docutils literal notranslate"><span class="pre">ExternalResult</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.external_result.ExternalResultMetaData"><code class="docutils literal notranslate"><span class="pre">ExternalResultMetaData</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.file_uri">modelon.impact.client.entities.file_uri module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.file_uri.CustomArtifactURI"><code class="docutils literal notranslate"><span class="pre">CustomArtifactURI</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.file_uri.FileURI"><code class="docutils literal notranslate"><span class="pre">FileURI</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.file_uri.ModelicaResourceURI"><code class="docutils literal notranslate"><span class="pre">ModelicaResourceURI</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.file_uri.URI"><code class="docutils literal notranslate"><span class="pre">URI</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.file_uri.URISchema"><code class="docutils literal notranslate"><span class="pre">URISchema</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.file_uri.get_resource_URI_from_str"><code class="docutils literal notranslate"><span class="pre">get_resource_URI_from_str()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.log">modelon.impact.client.entities.log module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.log.Log"><code class="docutils literal notranslate"><span class="pre">Log</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.model">modelon.impact.client.entities.model module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.model.Model"><code class="docutils literal notranslate"><span class="pre">Model</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.model.to_domain_parameter_value"><code class="docutils literal notranslate"><span class="pre">to_domain_parameter_value()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.model_executable">modelon.impact.client.entities.model_executable module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.model_executable.ModelDescription"><code class="docutils literal notranslate"><span class="pre">ModelDescription</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.model_executable.ModelExecutable"><code class="docutils literal notranslate"><span class="pre">ModelExecutable</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.model_executable.ModelExecutableInput"><code class="docutils literal notranslate"><span class="pre">ModelExecutableInput</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.model_executable.ModelExecutableRunInfo"><code class="docutils literal notranslate"><span class="pre">ModelExecutableRunInfo</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.project">modelon.impact.client.entities.project module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.project.GitRepoURL"><code class="docutils literal notranslate"><span class="pre">GitRepoURL</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.project.Project"><code class="docutils literal notranslate"><span class="pre">Project</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.project.ProjectDefinition"><code class="docutils literal notranslate"><span class="pre">ProjectDefinition</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.project.ProjectDependency"><code class="docutils literal notranslate"><span class="pre">ProjectDependency</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.project.ProjectType"><code class="docutils literal notranslate"><span class="pre">ProjectType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.project.StorageLocation"><code class="docutils literal notranslate"><span class="pre">StorageLocation</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.project.SvnRepoURL"><code class="docutils literal notranslate"><span class="pre">SvnRepoURL</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.project.VcsUri"><code class="docutils literal notranslate"><span class="pre">VcsUri</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.result">modelon.impact.client.entities.result module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.result.Result"><code class="docutils literal notranslate"><span class="pre">Result</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.status">modelon.impact.client.entities.status module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.status.CaseStatus"><code class="docutils literal notranslate"><span class="pre">CaseStatus</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.status.ExperimentStatus"><code class="docutils literal notranslate"><span class="pre">ExperimentStatus</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.status.ModelExecutableStatus"><code class="docutils literal notranslate"><span class="pre">ModelExecutableStatus</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities.workspace">modelon.impact.client.entities.workspace module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.AccessSettings"><code class="docutils literal notranslate"><span class="pre">AccessSettings</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.AppMode"><code class="docutils literal notranslate"><span class="pre">AppMode</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.OwnerData"><code class="docutils literal notranslate"><span class="pre">OwnerData</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.ProjectEntry"><code class="docutils literal notranslate"><span class="pre">ProjectEntry</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.PublishedWorkspace"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspace</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.PublishedWorkspaceACL"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceACL</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.PublishedWorkspaceDefinition"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceDefinition</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.PublishedWorkspaceRequester"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceRequester</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.PublishedWorkspaceType"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.PublishedWorkspaceUploadStatus"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceUploadStatus</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.ReceivedFrom"><code class="docutils literal notranslate"><span class="pre">ReceivedFrom</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.ReceivedFromWorkspace"><code class="docutils literal notranslate"><span class="pre">ReceivedFromWorkspace</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.Reference"><code class="docutils literal notranslate"><span class="pre">Reference</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.ReleasedProjectReference"><code class="docutils literal notranslate"><span class="pre">ReleasedProjectReference</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.VcsReference"><code class="docutils literal notranslate"><span class="pre">VcsReference</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.Workspace"><code class="docutils literal notranslate"><span class="pre">Workspace</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.entities.html#modelon.impact.client.entities.workspace.WorkspaceDefinition"><code class="docutils literal notranslate"><span class="pre">WorkspaceDefinition</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.entities.html#module-modelon.impact.client.entities">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.experiment_definition.html">modelon.impact.client.experiment_definition package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.interfaces.html">modelon.impact.client.experiment_definition.interfaces package</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#module-modelon.impact.client.experiment_definition.asserts">modelon.impact.client.experiment_definition.asserts module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.asserts.assert_valid_args"><code class="docutils literal notranslate"><span class="pre">assert_valid_args()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.asserts.assert_valid_case_modifiers"><code class="docutils literal notranslate"><span class="pre">assert_valid_case_modifiers()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.asserts.assert_valid_extensions"><code class="docutils literal notranslate"><span class="pre">assert_valid_extensions()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.asserts.validate_initialize_from"><code class="docutils literal notranslate"><span class="pre">validate_initialize_from()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#module-modelon.impact.client.experiment_definition.expansion">modelon.impact.client.experiment_definition.expansion module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.expansion.FullFactorial"><code class="docutils literal notranslate"><span class="pre">FullFactorial</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.expansion.LatinHypercube"><code class="docutils literal notranslate"><span class="pre">LatinHypercube</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.expansion.Sobol"><code class="docutils literal notranslate"><span class="pre">Sobol</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#module-modelon.impact.client.experiment_definition.extension">modelon.impact.client.experiment_definition.extension module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.extension.SimpleExperimentExtension"><code class="docutils literal notranslate"><span class="pre">SimpleExperimentExtension</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#module-modelon.impact.client.experiment_definition.fmu_based">modelon.impact.client.experiment_definition.fmu_based module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.fmu_based.SimpleFMUExperimentDefinition"><code class="docutils literal notranslate"><span class="pre">SimpleFMUExperimentDefinition</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#module-modelon.impact.client.experiment_definition.model_based">modelon.impact.client.experiment_definition.model_based module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.model_based.SimpleModelicaExperimentDefinition"><code class="docutils literal notranslate"><span class="pre">SimpleModelicaExperimentDefinition</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#module-modelon.impact.client.experiment_definition.modifiers">modelon.impact.client.experiment_definition.modifiers module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.modifiers.DataType"><code class="docutils literal notranslate"><span class="pre">DataType</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.modifiers.Enumeration"><code class="docutils literal notranslate"><span class="pre">Enumeration</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.modifiers.Modifier"><code class="docutils literal notranslate"><span class="pre">Modifier</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.modifiers.ValueModifier"><code class="docutils literal notranslate"><span class="pre">ValueModifier</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.modifiers.data_type_from_value"><code class="docutils literal notranslate"><span class="pre">data_type_from_value()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.modifiers.ensure_as_modifier"><code class="docutils literal notranslate"><span class="pre">ensure_as_modifier()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.modifiers.modifiers_to_dict"><code class="docutils literal notranslate"><span class="pre">modifiers_to_dict()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#module-modelon.impact.client.experiment_definition.operators">modelon.impact.client.experiment_definition.operators module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.operators.Beta"><code class="docutils literal notranslate"><span class="pre">Beta</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.operators.Choices"><code class="docutils literal notranslate"><span class="pre">Choices</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.operators.Normal"><code class="docutils literal notranslate"><span class="pre">Normal</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.operators.Operator"><code class="docutils literal notranslate"><span class="pre">Operator</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.operators.Range"><code class="docutils literal notranslate"><span class="pre">Range</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.operators.Uniform"><code class="docutils literal notranslate"><span class="pre">Uniform</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.operators.get_operator_from_dict"><code class="docutils literal notranslate"><span class="pre">get_operator_from_dict()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#module-modelon.impact.client.experiment_definition.util">modelon.impact.client.experiment_definition.util module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.util.case_to_identifier_dict"><code class="docutils literal notranslate"><span class="pre">case_to_identifier_dict()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.util.custom_function_parameters_to_dict"><code class="docutils literal notranslate"><span class="pre">custom_function_parameters_to_dict()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#modelon.impact.client.experiment_definition.util.get_options"><code class="docutils literal notranslate"><span class="pre">get_options()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.experiment_definition.html#module-modelon.impact.client.experiment_definition">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.operations.html">modelon.impact.client.operations package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.workspace.html">modelon.impact.client.operations.workspace package</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations.base">modelon.impact.client.operations.base module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.AsyncOperation"><code class="docutils literal notranslate"><span class="pre">AsyncOperation</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.AsyncOperationStatus"><code class="docutils literal notranslate"><span class="pre">AsyncOperationStatus</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.BaseOperation"><code class="docutils literal notranslate"><span class="pre">BaseOperation</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.EntityFromOperation"><code class="docutils literal notranslate"><span class="pre">EntityFromOperation</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.ExecutionOperation"><code class="docutils literal notranslate"><span class="pre">ExecutionOperation</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.base.Status"><code class="docutils literal notranslate"><span class="pre">Status</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations.case">modelon.impact.client.operations.case module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.case.CaseOperation"><code class="docutils literal notranslate"><span class="pre">CaseOperation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations.case_result">modelon.impact.client.operations.case_result module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.case_result.CaseResultImportOperation"><code class="docutils literal notranslate"><span class="pre">CaseResultImportOperation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations.content_import">modelon.impact.client.operations.content_import module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.content_import.ContentImportOperation"><code class="docutils literal notranslate"><span class="pre">ContentImportOperation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations.custom_artifact">modelon.impact.client.operations.custom_artifact module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.custom_artifact.CustomArtifactImportOperation"><code class="docutils literal notranslate"><span class="pre">CustomArtifactImportOperation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations.experiment">modelon.impact.client.operations.experiment module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.experiment.ExperimentOperation"><code class="docutils literal notranslate"><span class="pre">ExperimentOperation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations.external_result_import">modelon.impact.client.operations.external_result_import module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.external_result_import.ExternalResultImportOperation"><code class="docutils literal notranslate"><span class="pre">ExternalResultImportOperation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations.fmu_import">modelon.impact.client.operations.fmu_import module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.fmu_import.FMUImportOperation"><code class="docutils literal notranslate"><span class="pre">FMUImportOperation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations.model_executable">modelon.impact.client.operations.model_executable module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.model_executable.CachedModelExecutableOperation"><code class="docutils literal notranslate"><span class="pre">CachedModelExecutableOperation</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.model_executable.ModelExecutableOperation"><code class="docutils literal notranslate"><span class="pre">ModelExecutableOperation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations.project_import">modelon.impact.client.operations.project_import module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.operations.html#modelon.impact.client.operations.project_import.ProjectImportOperation"><code class="docutils literal notranslate"><span class="pre">ProjectImportOperation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.operations.html#module-modelon.impact.client.operations">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.sal.html">modelon.impact.client.sal package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.context">modelon.impact.client.sal.context module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.context.Context"><code class="docutils literal notranslate"><span class="pre">Context</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.custom_function">modelon.impact.client.sal.custom_function module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.custom_function.CustomFunctionService"><code class="docutils literal notranslate"><span class="pre">CustomFunctionService</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.exceptions">modelon.impact.client.sal.exceptions module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.exceptions.CommunicationError"><code class="docutils literal notranslate"><span class="pre">CommunicationError</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.exceptions.ErrorBodyIsNotJSONError"><code class="docutils literal notranslate"><span class="pre">ErrorBodyIsNotJSONError</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.exceptions.ErrorJSONInvalidFormatError"><code class="docutils literal notranslate"><span class="pre">ErrorJSONInvalidFormatError</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.exceptions.HTTPError"><code class="docutils literal notranslate"><span class="pre">HTTPError</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.exceptions.InvalidContentTypeError"><code class="docutils literal notranslate"><span class="pre">InvalidContentTypeError</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.exceptions.NoResponseFetchVersionError"><code class="docutils literal notranslate"><span class="pre">NoResponseFetchVersionError</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.exceptions.SSLError"><code class="docutils literal notranslate"><span class="pre">SSLError</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.exceptions.ServiceAccessError"><code class="docutils literal notranslate"><span class="pre">ServiceAccessError</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.exceptions.UnauthorizedError"><code class="docutils literal notranslate"><span class="pre">UnauthorizedError</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.experiment">modelon.impact.client.sal.experiment module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.experiment.ExperimentService"><code class="docutils literal notranslate"><span class="pre">ExperimentService</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.experiment.ResultFormat"><code class="docutils literal notranslate"><span class="pre">ResultFormat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.exports">modelon.impact.client.sal.exports module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.exports.ExportService"><code class="docutils literal notranslate"><span class="pre">ExportService</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.external_result">modelon.impact.client.sal.external_result module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.external_result.ExternalResultService"><code class="docutils literal notranslate"><span class="pre">ExternalResultService</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.http">modelon.impact.client.sal.http module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.http.HTTPClient"><code class="docutils literal notranslate"><span class="pre">HTTPClient</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.imports">modelon.impact.client.sal.imports module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.imports.ImportService"><code class="docutils literal notranslate"><span class="pre">ImportService</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.model_executable">modelon.impact.client.sal.model_executable module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.model_executable.ModelExecutableService"><code class="docutils literal notranslate"><span class="pre">ModelExecutableService</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.project">modelon.impact.client.sal.project module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.project.ProjectService"><code class="docutils literal notranslate"><span class="pre">ProjectService</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.request">modelon.impact.client.sal.request module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.request.Request"><code class="docutils literal notranslate"><span class="pre">Request</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.request.RequestCSV"><code class="docutils literal notranslate"><span class="pre">RequestCSV</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.request.RequestFileStream"><code class="docutils literal notranslate"><span class="pre">RequestFileStream</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.request.RequestJSON"><code class="docutils literal notranslate"><span class="pre">RequestJSON</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.request.RequestMatStream"><code class="docutils literal notranslate"><span class="pre">RequestMatStream</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.request.RequestOctetStream"><code class="docutils literal notranslate"><span class="pre">RequestOctetStream</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.request.RequestText"><code class="docutils literal notranslate"><span class="pre">RequestText</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.request.RequestXML"><code class="docutils literal notranslate"><span class="pre">RequestXML</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.request.RequestZip"><code class="docutils literal notranslate"><span class="pre">RequestZip</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.response">modelon.impact.client.sal.response module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.response.CSVResponse"><code class="docutils literal notranslate"><span class="pre">CSVResponse</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.response.FileResponse"><code class="docutils literal notranslate"><span class="pre">FileResponse</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.response.JSONResponse"><code class="docutils literal notranslate"><span class="pre">JSONResponse</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.response.MatStreamResponse"><code class="docutils literal notranslate"><span class="pre">MatStreamResponse</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.response.OctetStreamResponse"><code class="docutils literal notranslate"><span class="pre">OctetStreamResponse</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.response.Response"><code class="docutils literal notranslate"><span class="pre">Response</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.response.ResponseError"><code class="docutils literal notranslate"><span class="pre">ResponseError</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.response.TextResponse"><code class="docutils literal notranslate"><span class="pre">TextResponse</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.response.XMLResponse"><code class="docutils literal notranslate"><span class="pre">XMLResponse</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.response.ZIPResponse"><code class="docutils literal notranslate"><span class="pre">ZIPResponse</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.service">modelon.impact.client.sal.service module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.service.Service"><code class="docutils literal notranslate"><span class="pre">Service</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.service.is_jupyterhub_url"><code class="docutils literal notranslate"><span class="pre">is_jupyterhub_url()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.uri">modelon.impact.client.sal.uri module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.uri.URI"><code class="docutils literal notranslate"><span class="pre">URI</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.users">modelon.impact.client.sal.users module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.users.UsersService"><code class="docutils literal notranslate"><span class="pre">UsersService</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal.workspace">modelon.impact.client.sal.workspace module</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modelon.impact.client.sal.html#modelon.impact.client.sal.workspace.WorkspaceService"><code class="docutils literal notranslate"><span class="pre">WorkspaceService</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.sal.html#module-modelon.impact.client.sal">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modelon.impact.client.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modelon.impact.client.html#module-modelon.impact.client.client">modelon.impact.client.client module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client"><code class="docutils literal notranslate"><span class="pre">Client</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.convert_workspace"><code class="docutils literal notranslate"><span class="pre">Client.convert_workspace()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.create_workspace"><code class="docutils literal notranslate"><span class="pre">Client.create_workspace()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_case_by_reference"><code class="docutils literal notranslate"><span class="pre">Client.get_case_by_reference()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_executions"><code class="docutils literal notranslate"><span class="pre">Client.get_executions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_experiment_by_reference"><code class="docutils literal notranslate"><span class="pre">Client.get_experiment_by_reference()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_me"><code class="docutils literal notranslate"><span class="pre">Client.get_me()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_project"><code class="docutils literal notranslate"><span class="pre">Client.get_project()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_project_matchings"><code class="docutils literal notranslate"><span class="pre">Client.get_project_matchings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_projects"><code class="docutils literal notranslate"><span class="pre">Client.get_projects()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_published_workspaces_client"><code class="docutils literal notranslate"><span class="pre">Client.get_published_workspaces_client()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_workspace"><code class="docutils literal notranslate"><span class="pre">Client.get_workspace()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_workspace_by_name"><code class="docutils literal notranslate"><span class="pre">Client.get_workspace_by_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.get_workspaces"><code class="docutils literal notranslate"><span class="pre">Client.get_workspaces()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.import_project_from_zip"><code class="docutils literal notranslate"><span class="pre">Client.import_project_from_zip()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.import_workspace_from_shared_definition"><code class="docutils literal notranslate"><span class="pre">Client.import_workspace_from_shared_definition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.import_workspace_from_zip"><code class="docutils literal notranslate"><span class="pre">Client.import_workspace_from_zip()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Client.upload_workspace"><code class="docutils literal notranslate"><span class="pre">Client.upload_workspace()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Execution"><code class="docutils literal notranslate"><span class="pre">Execution</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Execution.from_dict"><code class="docutils literal notranslate"><span class="pre">Execution.from_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Execution.id"><code class="docutils literal notranslate"><span class="pre">Execution.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Execution.kind"><code class="docutils literal notranslate"><span class="pre">Execution.kind</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Execution.workspace_id"><code class="docutils literal notranslate"><span class="pre">Execution.workspace_id</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ExecutionKind"><code class="docutils literal notranslate"><span class="pre">ExecutionKind</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ExecutionKind.COMPILATION"><code class="docutils literal notranslate"><span class="pre">ExecutionKind.COMPILATION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ExecutionKind.EXPERIMENT"><code class="docutils literal notranslate"><span class="pre">ExecutionKind.EXPERIMENT</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ProjectMatching"><code class="docutils literal notranslate"><span class="pre">ProjectMatching</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ProjectMatching.entry_id"><code class="docutils literal notranslate"><span class="pre">ProjectMatching.entry_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ProjectMatching.get_selection"><code class="docutils literal notranslate"><span class="pre">ProjectMatching.get_selection()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ProjectMatching.make_selection_interactive"><code class="docutils literal notranslate"><span class="pre">ProjectMatching.make_selection_interactive()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ProjectMatching.projects"><code class="docutils literal notranslate"><span class="pre">ProjectMatching.projects</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ProjectMatching.vcs_uri"><code class="docutils literal notranslate"><span class="pre">ProjectMatching.vcs_uri</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ProjectMatchings"><code class="docutils literal notranslate"><span class="pre">ProjectMatchings</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ProjectMatchings.entries"><code class="docutils literal notranslate"><span class="pre">ProjectMatchings.entries</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.ProjectMatchings.make_selections_interactive"><code class="docutils literal notranslate"><span class="pre">ProjectMatchings.make_selections_interactive()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Selection"><code class="docutils literal notranslate"><span class="pre">Selection</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Selection.entry_id"><code class="docutils literal notranslate"><span class="pre">Selection.entry_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Selection.project"><code class="docutils literal notranslate"><span class="pre">Selection.project</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Selection.to_dict"><code class="docutils literal notranslate"><span class="pre">Selection.to_dict()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Tenant"><code class="docutils literal notranslate"><span class="pre">Tenant</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Tenant.from_dict"><code class="docutils literal notranslate"><span class="pre">Tenant.from_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Tenant.group_name"><code class="docutils literal notranslate"><span class="pre">Tenant.group_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.Tenant.id"><code class="docutils literal notranslate"><span class="pre">Tenant.id</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.User"><code class="docutils literal notranslate"><span class="pre">User</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.User.email"><code class="docutils literal notranslate"><span class="pre">User.email</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.User.firstname"><code class="docutils literal notranslate"><span class="pre">User.firstname</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.User.from_dict"><code class="docutils literal notranslate"><span class="pre">User.from_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.User.id"><code class="docutils literal notranslate"><span class="pre">User.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.User.last_name"><code class="docutils literal notranslate"><span class="pre">User.last_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.User.license"><code class="docutils literal notranslate"><span class="pre">User.license</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.User.roles"><code class="docutils literal notranslate"><span class="pre">User.roles</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.User.tenant"><code class="docutils literal notranslate"><span class="pre">User.tenant</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.client.User.username"><code class="docutils literal notranslate"><span class="pre">User.username</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modelon.impact.client.html#module-modelon.impact.client.configuration">modelon.impact.client.configuration module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.configuration.Experimental"><code class="docutils literal notranslate"><span class="pre">Experimental</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.configuration.get_client_experimental"><code class="docutils literal notranslate"><span class="pre">get_client_experimental()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.configuration.get_client_interactive"><code class="docutils literal notranslate"><span class="pre">get_client_interactive()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.configuration.get_client_url"><code class="docutils literal notranslate"><span class="pre">get_client_url()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modelon.impact.client.html#module-modelon.impact.client.credential_manager">modelon.impact.client.credential_manager module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.credential_manager.CredentialManager"><code class="docutils literal notranslate"><span class="pre">CredentialManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.credential_manager.CredentialManager.get_key"><code class="docutils literal notranslate"><span class="pre">CredentialManager.get_key()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.credential_manager.CredentialManager.get_key_from_env"><code class="docutils literal notranslate"><span class="pre">CredentialManager.get_key_from_env()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.credential_manager.CredentialManager.get_key_from_file"><code class="docutils literal notranslate"><span class="pre">CredentialManager.get_key_from_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.credential_manager.CredentialManager.get_key_from_prompt"><code class="docutils literal notranslate"><span class="pre">CredentialManager.get_key_from_prompt()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.credential_manager.CredentialManager.write_key_to_file"><code class="docutils literal notranslate"><span class="pre">CredentialManager.write_key_to_file()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modelon.impact.client.html#module-modelon.impact.client.exceptions">modelon.impact.client.exceptions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.AuthenticationError"><code class="docutils literal notranslate"><span class="pre">AuthenticationError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.Error"><code class="docutils literal notranslate"><span class="pre">Error</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.ExternalResultUploadError"><code class="docutils literal notranslate"><span class="pre">ExternalResultUploadError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.FailedOrphanCleanup"><code class="docutils literal notranslate"><span class="pre">FailedOrphanCleanup</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.IllegalCaseResultImport"><code class="docutils literal notranslate"><span class="pre">IllegalCaseResultImport</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.IllegalContentImport"><code class="docutils literal notranslate"><span class="pre">IllegalContentImport</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.IllegalCustomArtifactImport"><code class="docutils literal notranslate"><span class="pre">IllegalCustomArtifactImport</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.IllegalFMUImport"><code class="docutils literal notranslate"><span class="pre">IllegalFMUImport</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.IllegalProjectImport"><code class="docutils literal notranslate"><span class="pre">IllegalProjectImport</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.IllegalWorkspaceConversion"><code class="docutils literal notranslate"><span class="pre">IllegalWorkspaceConversion</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.IllegalWorkspaceExport"><code class="docutils literal notranslate"><span class="pre">IllegalWorkspaceExport</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.IllegalWorkspaceImport"><code class="docutils literal notranslate"><span class="pre">IllegalWorkspaceImport</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.NoAssignedLicenseError"><code class="docutils literal notranslate"><span class="pre">NoAssignedLicenseError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.NoAssociatedPublishedWorkspaceError"><code class="docutils literal notranslate"><span class="pre">NoAssociatedPublishedWorkspaceError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.NoSuchCustomArtifactError"><code class="docutils literal notranslate"><span class="pre">NoSuchCustomArtifactError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.OperationCompleteError"><code class="docutils literal notranslate"><span class="pre">OperationCompleteError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.OperationFailureError"><code class="docutils literal notranslate"><span class="pre">OperationFailureError</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.OperationFailureError.for_operation"><code class="docutils literal notranslate"><span class="pre">OperationFailureError.for_operation()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.OperationNotCompleteError"><code class="docutils literal notranslate"><span class="pre">OperationNotCompleteError</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.OperationNotCompleteError.for_operation"><code class="docutils literal notranslate"><span class="pre">OperationNotCompleteError.for_operation()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.OperationTimeOutError"><code class="docutils literal notranslate"><span class="pre">OperationTimeOutError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.RemotePublishedWorkspaceLinkError"><code class="docutils literal notranslate"><span class="pre">RemotePublishedWorkspaceLinkError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.exceptions.UnsupportedSemanticVersionError"><code class="docutils literal notranslate"><span class="pre">UnsupportedSemanticVersionError</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modelon.impact.client.html#module-modelon.impact.client.options">modelon.impact.client.options module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.BaseExecutionOptions"><code class="docutils literal notranslate"><span class="pre">BaseExecutionOptions</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.BaseExecutionOptions.with_values"><code class="docutils literal notranslate"><span class="pre">BaseExecutionOptions.with_values()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.CompilerOptions"><code class="docutils literal notranslate"><span class="pre">CompilerOptions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.ProjectExecutionOptions"><code class="docutils literal notranslate"><span class="pre">ProjectExecutionOptions</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.ProjectExecutionOptions.compiler_options"><code class="docutils literal notranslate"><span class="pre">ProjectExecutionOptions.compiler_options</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.ProjectExecutionOptions.custom_function"><code class="docutils literal notranslate"><span class="pre">ProjectExecutionOptions.custom_function</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.ProjectExecutionOptions.runtime_options"><code class="docutils literal notranslate"><span class="pre">ProjectExecutionOptions.runtime_options</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.ProjectExecutionOptions.simulation_options"><code class="docutils literal notranslate"><span class="pre">ProjectExecutionOptions.simulation_options</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.ProjectExecutionOptions.solver_options"><code class="docutils literal notranslate"><span class="pre">ProjectExecutionOptions.solver_options</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.ProjectExecutionOptions.to_dict"><code class="docutils literal notranslate"><span class="pre">ProjectExecutionOptions.to_dict()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.RuntimeOptions"><code class="docutils literal notranslate"><span class="pre">RuntimeOptions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.SimulationOptions"><code class="docutils literal notranslate"><span class="pre">SimulationOptions</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.SimulationOptions.with_result_filter"><code class="docutils literal notranslate"><span class="pre">SimulationOptions.with_result_filter()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.options.SolverOptions"><code class="docutils literal notranslate"><span class="pre">SolverOptions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modelon.impact.client.html#module-modelon.impact.client.published_workspace_client">modelon.impact.client.published_workspace_client module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.OrphanPublishedWorkspaceOwner"><code class="docutils literal notranslate"><span class="pre">OrphanPublishedWorkspaceOwner</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.OrphanPublishedWorkspaceOwner.group_name"><code class="docutils literal notranslate"><span class="pre">OrphanPublishedWorkspaceOwner.group_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.OrphanPublishedWorkspaceOwner.id"><code class="docutils literal notranslate"><span class="pre">OrphanPublishedWorkspaceOwner.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.OrphanPublishedWorkspaceOwner.username"><code class="docutils literal notranslate"><span class="pre">OrphanPublishedWorkspaceOwner.username</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspaceAccess"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceAccess</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspaceAccess.published_workspace"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceAccess.published_workspace</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspaceAccess.requested_id"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceAccess.requested_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspaceAccess.requested_username"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceAccess.requested_username</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspaceAccess.sharing_id"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceAccess.sharing_id</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspaceAccessKind"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceAccessKind</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspaceAccessKind.REQUESTED_BY_ME"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceAccessKind.REQUESTED_BY_ME</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspaceAccessKind.REQUESTED_FROM_ME"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceAccessKind.REQUESTED_FROM_ME</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspaceAccessKind.SHARED_BY_ME"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceAccessKind.SHARED_BY_ME</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspaceAccessKind.SHARED_WITH_ME"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspaceAccessKind.SHARED_WITH_ME</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspacesClient"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspacesClient</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspacesClient.find"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspacesClient.find()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="modelon.impact.client.html#modelon.impact.client.published_workspace_client.PublishedWorkspacesClient.get_by_id"><code class="docutils literal notranslate"><span class="pre">PublishedWorkspacesClient.get_by_id()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modelon.impact.client.html#module-modelon.impact.client">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-modelon.impact">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-modelon.impact" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modelon.html" class="btn btn-neutral float-left" title="modelon package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="modelon.impact.client.html" class="btn btn-neutral float-right" title="modelon.impact.client package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2024, Modelon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

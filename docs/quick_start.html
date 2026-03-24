@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Start &mdash; Modelon-impact-client v4.10.4 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/rtd_sphinx_search.min.css" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/js/rtd_search_config.js"></script>
+        <script src="_static/js/rtd_sphinx_search.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Working with workspaces" href="working_with_workspaces.html" />
+    <link rel="prev" title="Authentication with Modelon Impact" href="authentication_with_modelon_impact.html" /> 
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="modelon-impact-client" /><meta name="readthedocs-version-slug" content="stable" /><meta name="readthedocs-resolver-filename" content="/quick_start.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #fb8c00" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Modelon-impact-client
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install Modelon Impact Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authentication_with_modelon_impact.html">Authentication with Modelon Impact</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="working_with_workspaces.html">Working with workspaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choosing_analysis_type.html">Choosing analysis type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choosing_a_model.html">Choosing a model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup_run_experiment.html">Setup and run an experiment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting_experiment_results.html">Plotting experiment results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multi_execution_experiments.html">Multi-execution experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reexecuting_updating_experiments.html">Re-executing and updating experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fmu_based_workflow.html">FMU based workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logging_output_for_client.html">Logging output for client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="removing_fmus_experiments.html">Removing FMUs and experiments</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sobol_space_coverage.html">Sobol space coverage</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">modelon</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help &amp; Refernce</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #fb8c00" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Modelon-impact-client</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Quick Start</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/quick_start.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="quick-start">
+<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this heading"></a></h1>
+<p>The python API enables the execution of workflows orchestrated on a client and executed on a Modelon Impact server, which
+may be running remotely.  With sufficient login credentials and an API Key (see <a class="reference internal" href="authentication_with_modelon_impact.html"><span class="doc">Authentication with Modelon Impact</span></a>),
+Modelica models may be uploaded, compiled, and executed on a server.  The results can be either processed on the server
+with a custom function or downloaded to the client for further analysis.</p>
+<p>An analysis could be set up and executed using either the <a class="reference internal" href="setup_run_experiment.html#setup-and-run-an-experiment"><span class="std std-ref">Model</span></a> or a <a class="reference internal" href="fmu_based_workflow.html#fmu-based-workflow"><span class="std std-ref">FMU</span></a> based workflow.</p>
+<p>A simple example using the <a class="reference internal" href="setup_run_experiment.html#setup-and-run-an-experiment"><span class="std std-ref">Model based workflow</span></a> is shown below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">modelon.impact.client</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">url</span><span class="o">=&lt;</span><span class="n">impact</span><span class="o">-</span><span class="n">domain</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1"># url is optional; defaults to on-prem OR &quot;https://impact.modelon.cloud&quot;</span>
+<span class="n">workspace</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_workspace</span><span class="p">(</span><span class="o">&lt;</span><span class="n">workspace</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span><span class="p">)</span>
+
+<span class="c1"># Choose analysis type</span>
+<span class="n">dynamic</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">get_custom_function</span><span class="p">(</span><span class="s1">&#39;dynamic&#39;</span><span class="p">)</span>
+
+<span class="c1"># Get model class</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="s2">&quot;Modelica.Blocks.Examples.PID_Controller&quot;</span><span class="p">)</span>
+
+<span class="c1"># Execute experiment</span>
+<span class="n">experiment_definition</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">new_experiment_definition</span><span class="p">(</span><span class="n">dynamic</span><span class="p">)</span>
+<span class="n">exp</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">experiment_definition</span><span class="p">)</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+
+<span class="c1"># Getting the simulated FMU object from the case object</span>
+<span class="n">case</span> <span class="o">=</span> <span class="n">exp</span><span class="o">.</span><span class="n">get_case</span><span class="p">(</span><span class="s1">&#39;case_1&#39;</span><span class="p">)</span>
+<span class="n">fmu</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">get_fmu</span><span class="p">()</span>
+
+<span class="c1"># Plot Trajectory</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">res</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">get_trajectories</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">],</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;inertia1.phi&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>A simple example using the <a class="reference internal" href="fmu_based_workflow.html#fmu-based-workflow"><span class="std std-ref">FMU based workflow</span></a> is shown below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">modelon.impact.client</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">url</span><span class="o">=&lt;</span><span class="n">impact</span><span class="o">-</span><span class="n">domain</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1"># url is optional; defaults to on-prem OR &quot;https://impact.modelon.cloud&quot;</span>
+<span class="n">workspace</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_workspace</span><span class="p">(</span><span class="o">&lt;</span><span class="n">workspace</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span><span class="p">)</span>
+
+<span class="c1"># Choose analysis type</span>
+<span class="n">dynamic</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">get_custom_function</span><span class="p">(</span><span class="s1">&#39;dynamic&#39;</span><span class="p">)</span>
+
+<span class="c1"># Get model reference</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="s2">&quot;Modelica.Blocks.Examples.PID_Controller&quot;</span><span class="p">)</span>
+<span class="n">fmu</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">compiler_options</span><span class="o">=</span><span class="n">dynamic</span><span class="o">.</span><span class="n">get_compiler_options</span><span class="p">())</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+
+<span class="c1"># Definiting simulation and solver options</span>
+<span class="n">solver_options</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;atol&#39;</span><span class="p">:</span><span class="mf">1e-8</span><span class="p">}</span>
+<span class="n">simulation_options</span> <span class="o">=</span> <span class="n">dynamic</span><span class="o">.</span><span class="n">get_simulation_options</span><span class="p">()</span><span class="o">.</span><span class="n">with_values</span><span class="p">(</span><span class="n">ncp</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+
+<span class="c1"># Execute experiment</span>
+<span class="n">experiment_definition</span> <span class="o">=</span> <span class="n">fmu</span><span class="o">.</span><span class="n">new_experiment_definition</span><span class="p">(</span><span class="n">dynamic</span><span class="p">,</span> <span class="n">solver_options</span><span class="p">,</span> <span class="n">simulation_options</span><span class="p">)</span>
+<span class="n">exp</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">experiment_definition</span><span class="p">)</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+
+<span class="c1"># Plot Trajectory</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">case</span> <span class="o">=</span> <span class="n">exp</span><span class="o">.</span><span class="n">get_case</span><span class="p">(</span><span class="s1">&#39;case_1&#39;</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">get_trajectories</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">],</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;inertia1.phi&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>An example of setting up and executing a series of simulations on a server and returning the plot trajectories:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">modelon.impact.client</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span><span class="p">,</span> <span class="n">Range</span><span class="p">,</span> <span class="n">Enumeration</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">url</span><span class="o">=&lt;</span><span class="n">impact</span><span class="o">-</span><span class="n">domain</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1"># url is optional; defaults to on-prem OR &quot;https://impact.modelon.cloud&quot;</span>
+<span class="n">workspace</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_workspace</span><span class="p">(</span><span class="o">&lt;</span><span class="n">workspace</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span><span class="p">)</span>
+
+<span class="c1"># Choose analysis type</span>
+<span class="n">dynamic</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">get_custom_function</span><span class="p">(</span><span class="s1">&#39;dynamic&#39;</span><span class="p">)</span>
+
+<span class="c1"># Get model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="s2">&quot;Modelica.Blocks.Examples.PID_Controller&quot;</span><span class="p">)</span>
+
+<span class="c1"># Execute experiment</span>
+<span class="n">experiment_definition</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">new_experiment_definition</span><span class="p">(</span>
+   <span class="n">dynamic</span><span class="o">.</span><span class="n">with_parameters</span><span class="p">(</span><span class="n">start_time</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">final_time</span><span class="o">=</span><span class="mf">2.0</span><span class="p">),</span>
+   <span class="n">simulation_options</span><span class="o">=</span><span class="n">dynamic</span><span class="o">.</span><span class="n">get_simulation_options</span><span class="p">()</span><span class="o">.</span><span class="n">with_values</span><span class="p">(</span><span class="n">ncp</span><span class="o">=</span><span class="mi">500</span><span class="p">),</span>
+   <span class="n">solver_options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;atol&#39;</span><span class="p">:</span> <span class="mf">1e-8</span><span class="p">},</span>
+<span class="p">)</span><span class="o">.</span><span class="n">with_modifiers</span><span class="p">({</span>
+   <span class="s1">&#39;inertia1.J&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+   <span class="s1">&#39;PI.k&#39;</span><span class="p">:</span> <span class="n">Range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+   <span class="s2">&quot;PI.homotopyType&quot;</span><span class="p">:</span> <span class="n">Enumeration</span><span class="p">(</span><span class="s2">&quot;Modelica.Blocks.Types.LimiterHomotopy.NoHomotopy&quot;</span><span class="p">)</span>
+<span class="p">})</span>
+<span class="n">exp</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">experiment_definition</span><span class="p">)</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+
+<span class="c1"># Getting a set of simulated FMU objects from the cases</span>
+<span class="n">fmus</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">case</span><span class="o">.</span><span class="n">get_fmu</span><span class="p">()</span> <span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">exp</span><span class="o">.</span><span class="n">get_cases</span><span class="p">())</span>
+
+<span class="c1"># Plot Trajectory</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">exp</span><span class="o">.</span><span class="n">get_cases</span><span class="p">():</span>
+   <span class="k">if</span> <span class="n">case</span><span class="o">.</span><span class="n">is_successful</span><span class="p">():</span>
+      <span class="n">res</span> <span class="o">=</span> <span class="n">case</span><span class="o">.</span><span class="n">get_trajectories</span><span class="p">()</span>
+      <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">],</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;inertia1.phi&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>A more flexible and customized way to define a series of simulations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">modelon.impact.client</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span><span class="p">,</span> <span class="n">SimpleExperimentExtension</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">url</span><span class="o">=&lt;</span><span class="n">impact</span><span class="o">-</span><span class="n">domain</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1"># url is optional; defaults to on-prem OR &quot;https://impact.modelon.cloud&quot;</span>
+<span class="n">workspace</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_workspace</span><span class="p">(</span><span class="o">&lt;</span><span class="n">workspace</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span><span class="p">)</span>
+
+<span class="c1"># Choose analysis type</span>
+<span class="n">dynamic</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">get_custom_function</span><span class="p">(</span><span class="s1">&#39;dynamic&#39;</span><span class="p">)</span>
+
+<span class="c1"># Get model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="s2">&quot;Modelica.Blocks.Examples.PID_Controller&quot;</span><span class="p">)</span>
+
+<span class="n">experiment_definition</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">new_experiment_definition</span><span class="p">(</span>
+   <span class="n">dynamic</span><span class="o">.</span><span class="n">with_parameters</span><span class="p">(</span><span class="n">start_time</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">final_time</span><span class="o">=</span><span class="mf">2.0</span><span class="p">),</span>
+   <span class="n">simulation_options</span><span class="o">=</span><span class="n">dynamic</span><span class="o">.</span><span class="n">get_simulation_options</span><span class="p">()</span><span class="o">.</span><span class="n">with_values</span><span class="p">(</span><span class="n">ncp</span><span class="o">=</span><span class="mi">500</span><span class="p">),</span>
+   <span class="n">solver_options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;atol&#39;</span><span class="p">:</span> <span class="mf">1e-8</span><span class="p">},</span>
+<span class="p">)</span><span class="o">.</span><span class="n">with_modifiers</span><span class="p">({</span><span class="s1">&#39;inertia1.J&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+
+<span class="n">simulate_ext1</span> <span class="o">=</span> <span class="n">SimpleExperimentExtension</span><span class="p">(</span>
+   <span class="p">{</span><span class="s1">&#39;final_time&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;atol&#39;</span><span class="p">:</span> <span class="mf">1e-7</span><span class="p">}</span>
+<span class="p">)</span><span class="o">.</span><span class="n">with_modifiers</span><span class="p">({</span><span class="s1">&#39;PI.k&#39;</span><span class="p">:</span> <span class="mi">40</span><span class="p">})</span>
+<span class="n">simulate_ext2</span> <span class="o">=</span> <span class="n">SimpleExperimentExtension</span><span class="p">()</span><span class="o">.</span><span class="n">with_modifiers</span><span class="p">({</span><span class="s1">&#39;PI.k&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">})</span>
+
+<span class="n">experiment_definition</span> <span class="o">=</span> <span class="n">experiment_definition</span><span class="o">.</span><span class="n">with_extensions</span><span class="p">(</span>
+   <span class="p">[</span><span class="n">simulate_ext1</span><span class="p">,</span> <span class="n">simulate_ext2</span><span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">experiment_definition</span> <span class="o">=</span> <span class="n">experiment_definition</span><span class="o">.</span><span class="n">with_cases</span><span class="p">([{</span><span class="s1">&#39;PI.k&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;PI.k&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">}])</span>
+</pre></div>
+</div>
+<p>A workflow to upload/add a non-encrypted Modelica library or a Modelica model to a project.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">modelon.impact.client</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">url</span><span class="o">=&lt;</span><span class="n">impact</span><span class="o">-</span><span class="n">domain</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1"># url is optional; defaults to on-prem OR &quot;https://impact.modelon.cloud&quot;</span>
+<span class="n">workspace</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_workspace</span><span class="p">(</span><span class="o">&lt;</span><span class="n">workspace</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span><span class="p">)</span>
+
+<span class="c1"># Get the default project</span>
+<span class="n">project</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">get_default_project</span><span class="p">()</span>
+
+<span class="c1"># Upload a single Modelica model file</span>
+<span class="n">mo_modelica_content</span> <span class="o">=</span> <span class="n">project</span><span class="o">.</span><span class="n">import_model_library</span><span class="p">(</span><span class="s1">&#39;A.mo&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+
+<span class="c1"># Upload a zipped modelica library</span>
+<span class="n">zip_modelica_content</span> <span class="o">=</span> <span class="n">project</span><span class="o">.</span><span class="n">import_model_library</span><span class="p">(</span><span class="s1">&#39;B.zip&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>A workflow to fetch artifacts to do some analysis locally could be accomplished like below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">modelon.impact.client</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">url</span><span class="o">=&lt;</span><span class="n">impact</span><span class="o">-</span><span class="n">domain</span><span class="o">&gt;</span><span class="p">)</span> <span class="c1"># url is optional; defaults to on-prem OR &quot;https://impact.modelon.cloud&quot;</span>
+<span class="n">workspace</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_workspace</span><span class="p">(</span><span class="o">&lt;</span><span class="n">workspace</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span><span class="p">)</span>
+
+<span class="c1"># Compile and download model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="s2">&quot;Modelica.Blocks.Examples.PID_Controller&quot;</span><span class="p">)</span>
+<span class="n">fmu</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">({</span><span class="s1">&#39;include_protected_variables&#39;</span><span class="p">:</span><span class="kc">True</span><span class="p">})</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="n">fmu_path</span> <span class="o">=</span> <span class="n">fmu</span><span class="o">.</span><span class="n">download</span><span class="p">()</span>
+
+<span class="c1"># Use PyFMI or other tools that work with FMUs</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyfmi</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_fmu</span>
+
+<span class="n">fmu_model</span> <span class="o">=</span> <span class="n">load_fmu</span><span class="p">(</span><span class="n">fmu_path</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fmu_model</span><span class="o">.</span><span class="n">simulate</span><span class="p">()</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong></p>
+<p>The OS running the Impact server must match the environment that runs the compiled FMU. This is necessary as the binaries
+packaged with the FMU are based on the platform generating the FMU. For example, if the Impact server is running Linux
+the binary in the downloaded FMU is compiled for Linux. The downloaded FMU can then not be simulated on Windows.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="authentication_with_modelon_impact.html" class="btn btn-neutral float-left" title="Authentication with Modelon Impact" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="working_with_workspaces.html" class="btn btn-neutral float-right" title="Working with workspaces" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020-2024, Modelon.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
